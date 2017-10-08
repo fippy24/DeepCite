@@ -4,10 +4,9 @@ from utils import *
 from Compair import *
 from visualize import visualize
 import urllib.request
+import threading
 
 max_it = 5
-start_text = ''
-
 
 def be_all_end_all(node, iteration):
     parser = Parser(node.site)
@@ -17,7 +16,7 @@ def be_all_end_all(node, iteration):
     if (iteration < max_it and children is not None):
         for child in children:
             visualize(children)
-            be_all_end_all(child, iteration + 1)
+            threading.Thread(target = be_all_end_all, args = (child, iteration + 1)).start()
     else:  # TODO: need a better ending
         if (children is None):
             return [node]
