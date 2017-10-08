@@ -1,9 +1,8 @@
 # import PageParser as pp
-from TextParser import *
-from utils import *
-from Compair import *
-from visualize import visualize
-import urllib.request
+from deepcite.text_parser import *
+
+from deepcite.compare import *
+from deepcite.visualize import visualize
 
 max_it = 5
 start_text = ''
@@ -25,7 +24,7 @@ def be_all_end_all(node, iteration):
             return children
 
 
-if __name__ == '__main__':
+def test_main():
     start_site = 'http://www.aauw.org/research/' \
                  'the-simple-truth-about-the-gender-pay-gap/'
     start_text = 'As a result, women who complete college degree ' \

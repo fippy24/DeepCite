@@ -1,5 +1,5 @@
 from nltk.tokenize import sent_tokenize, word_tokenize
-from utils import *
+from .utils import *
 import numpy as np
 import nltk
 import urllib.request
