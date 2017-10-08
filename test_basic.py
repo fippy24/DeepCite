@@ -24,6 +24,7 @@ def be_all_end_all(node, iteration):
             return children
 
 
+# Call pytest from this folder to run it.
 def test_main():
     start_site = 'http://www.aauw.org/research/' \
                  'the-simple-truth-about-the-gender-pay-gap/'
