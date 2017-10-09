@@ -24,7 +24,7 @@ def be_all_end_all(node, iteration):
             return children
 
 
-if __name__ == '__main__':
+def test_simple():
     start_site = 'http://www.aauw.org/research/' \
                  'the-simple-truth-about-the-gender-pay-gap/'
     start_text = 'As a result, women who complete college degree ' \
